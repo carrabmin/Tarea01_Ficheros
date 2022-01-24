@@ -20,10 +20,10 @@ public class ListCoches implements Serializable{
 	}
 
 	// Constructor con parámetro:
-	//public ListCoches(List<Coche> listaCoches) {
-		//super();
-		//this.listaCoches = listaCoches;
-	//}
+	public ListCoches(List<Coche> listaCoches) {
+		super();
+		this.listaCoches = listaCoches;
+	}
 	
 	// Getters and Setters:
 	public List<Coche> getListaCoches() {
@@ -96,7 +96,7 @@ public class ListCoches implements Serializable{
 	public boolean compararID(String id) {
 		boolean respuesta = false;
 	
-			// Recorremos la lista para encontrar la posición correspondiente al ID:
+			// Recorremos la lista para comparar el ID:
 			for(Coche c: listaCoches) {
 				if(c.getId().equalsIgnoreCase(id)) {
 					respuesta = true;
@@ -111,7 +111,7 @@ public class ListCoches implements Serializable{
 	public boolean compararMatricula(String matricula) {
 		boolean respuesta = false;
 	
-			// Recorremos la lista para encontrar la posición correspondiente al ID:
+			// Recorremos la lista para comparar la matrícula:
 			for(Coche c: listaCoches) {
 				if(c.getMatricula().equalsIgnoreCase(matricula)) {
 					respuesta = true;

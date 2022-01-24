@@ -69,11 +69,5 @@ public class Coche implements Serializable {
 		return "Coche [Id: " + id + " / Matricula: " + matricula + " / Marca: " + marca + " / Modelo: " + modelo + " / Color: "
 				+ color + "]\n";
 	}
-	
-	
-	
-	
-	
-	
 
 }
